@@ -12,6 +12,8 @@ terminal. With this installed, Cortex shows up as an agent:
 
 It works through Cortex's own hooks and Herdr's public CLI. Herdr itself is not modified.
 
+This is a community project. It is not affiliated with or endorsed by Snowflake or Herdr.
+
 ## Requirements
 
 - Herdr 0.9.2 or later (session resume needs 0.9.2; tested on 0.9.5)
@@ -143,8 +145,20 @@ can't interrupt Cortex. `SessionStart` isn't used, because Cortex runs it before
 
 See [docs/verification.md](docs/verification.md) for what has been tested and on what.
 
-## Development
+## Contributing
+
+Issues and pull requests are welcome, especially results from Cortex or Herdr versions not
+listed in [docs/verification.md](docs/verification.md). The code uses only the Python standard
+library. Run the tests with:
 
 ```sh
 python3 -I tests/test_hooks.py
 ```
+
+For native Cortex support inside Herdr itself, add your voice to Herdr discussions
+[#783](https://github.com/herdrdev/herdr/discussions/783) and
+[#5636](https://github.com/herdrdev/herdr/discussions/5636).
+
+## License
+
+[MIT](LICENSE)
