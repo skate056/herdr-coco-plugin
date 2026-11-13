@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+.claude/settings.local.json
+CLAUDE.local.md
+__pycache__/
+# reference clone of upstream and throwaway test server
+herdr/
+.t/
